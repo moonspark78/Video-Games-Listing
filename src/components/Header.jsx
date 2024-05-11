@@ -26,12 +26,12 @@ const Header = () => {
         {theme==="light" ? (
           <FaMoon
             className="text-[35px] bg-slate-200 p-1 rounded-full cursor-pointer"
-            onClick={() => setTheme("dark")}
+            onClick={() => {setTheme("dark");localStorage.setItem("theme", "dark")}}
           />
         ) : (
           <MdSunny
             className="text-[35px] bg-slate-200 p-1 rounded-full cursor-pointer"
-            onClick={() => setTheme("light")}
+            onClick={() =>{setTheme("light");localStorage.setItem("theme", "light")}}
           />
         )}
       </div>

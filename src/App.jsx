@@ -5,10 +5,11 @@ import { useState } from 'react';
 import {ThemeContext} from "./context/ThemeContext"
 
 function App() {
-  const [theme, setTheme]= useState("light")
+  const [theme, setTheme]= useState("dark")
   return (
     <ThemeContext.Provider value={{theme, setTheme}}>
-      <div className={`${theme==='dark' ? 'bg-[#121212] ':null }`}>
+      <div className={` ${theme}
+      ${theme==='dark' ? 'bg-[#121212] ':null }`}>
       <Header/>
         <Home/>
       </div>
