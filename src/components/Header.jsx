@@ -19,7 +19,7 @@ const Header = () => {
         <input
           type="text"
           placeholder="Select Your Video Game"
-          className="bg-transparent dark:bg-cyan-500 px-2 outline-none"
+          className="bg-transparent px-2 outline-none"
         />
       </div>
       <div>
