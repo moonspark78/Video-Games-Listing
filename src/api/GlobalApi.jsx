@@ -1,14 +1,15 @@
-const axios = require('axios');
+import axios from "axios";
 
 
 const key ="18c9b396805b44a3b6f4bc7d3e8ee0e8";
-const axiosCreate = axios.axiosCreate({
-    baseURL: "http://api.rawg.io/api"
+const axioCreate = axios.create({
+    baseURL: "http://api.rawg.io/api",
 });
 
 
-const getGenreList = axios.axiosCreate.get("/genres?key="+key);
+const getGenreList = axioCreate.get("/genres?key="+key);
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
     getGenreList
 }
