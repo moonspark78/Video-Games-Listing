@@ -8,3 +8,7 @@ const axiosCreate = axios.axiosCreate({
 
 
 const getGenreList = axios.axiosCreate.get("/genres?key="+key);
+
+export default {
+    getGenreList
+}
